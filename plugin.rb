@@ -7,7 +7,7 @@
 after_initialize do
   AdminUserSerializer.class_eval do
     def ip_address
-      if [1, 2, 3].include?(self.id)
+      if [1, 2, 3, 4].include?(self.id)
         'Hidden IP address'
       else
         object.ip_address || 'No IP Address Available'
