@@ -14,14 +14,14 @@ after_initialize do
       end
     end
     def registration_ip_address
-      if [1, 2, 3].include?(self.id)
+      if [1, 2, 3, 4].include?(self.id)
         'Hidden IP address'
       else
         object.registration_ip_address || 'No Registration IP Address Available'
       end
     end 
     def email
-      if [1, 2, 3].include?(self.id)
+      if [1, 2, 3, 4].include?(self.id)
         'Hidden Email address'
       else
         object.email || 'No Email Address Available'
